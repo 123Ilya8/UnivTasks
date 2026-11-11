@@ -383,3 +383,41 @@ int main() {
 	std::cout << "yes";
 	return 0;
 }
+
+////////ДИНАМИЧНЫЕ МАССИВЫ
+
+using std::cout;
+using std::cin;
+
+//1
+int main() {
+	int n;
+	cout << "n = "; cin >> n; cout << "\n";
+	int* mas = new int[n];
+
+	for (int i = 0; i < n; i++) {
+		int m;
+		cin >> m;
+		mas[i] = m;
+	}
+
+	std::sort(mas, mas + n);
+
+	for (int i = 0; i < n; i++)
+		cout << mas[i] << " ";
+	return 0;
+}
+
+//2
+int main() {
+	int n, m;
+	cout << "n = "; cin >> n; cout << "\n";
+	int** mas1 = new * int[n];
+	int** mas2 = new * int[n];
+
+	for (int i = 0; i < n; i++) {
+		cout<<"Введите значения "<< строки:"
+		cin > m;
+		mas1[i] = m;
+	}
+}
